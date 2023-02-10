@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product</title>
+    <link rel="stylesheet" href="E-FRONT.CSS">
+    <script src="https://kit.fontawesome.com/3a1114f345.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/3a1114f345.js" crossorigin="anonymous"> -->
+</head>
+<body>
+
+  
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="IMAGE/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li>
+                        <a href="E-FRONT.HTML">Home</a>
+                    </li>
+                    <li>
+                        <a href="E-product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="E-detail.html">About</a>
+                    </li>
+                    <li>
+                        <a href="E-cart.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="E-ACCOUNT.HTML">Account</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="IMAGE/cart.png" width="30px" height="30px">
+            <img src="IMAGE/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+                
+
+
+
+      <!------------------ACCOUNT PAGE-->
+      
+
+      <div class="account-page">
+          <div class="contaner">
+              <div class="row">
+                  <div class="col-2">
+                      <img src="image/image1.png" width="100%">
+                  </div>
+                  <div class="col-2">
+                      <div class="form-container">
+                          <div class="form-btn">
+                              <span onclick="login()"> Login</span>
+                              <span onclick="register()">Register</span>
+                              <hr id="indicator">
+                          </div>
+                          <form id="loginform">
+                              <input type="text" placeholder="usernamme">
+                              <input type="password" placeholder="Password">
+                              <button type="submit" class="btn">Login</button>
+                              <a href="">Forget password</a>
+                          </form>
+
+                          <form id="regform">
+                            <input type="text" placeholder="usernamme">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+    <!---------------------------footer------------------------->
+    <div class="footer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>
+                    Download our App for andriod and ios    
+                </p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/logo-white.png">
+                <p>
+                    Our purpose is to Substainalby Make the Pleasure and Benifits of Sport Accessible to the Many    
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li>
+                        Coupons
+                    </li>
+                    <li>
+                        Blog post
+                    </li>
+                    <li>
+                        Return Policy
+                    </li>
+                    <li>
+                        Join Afflitae
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col-1">
+                <h3>Follow us</h3>
+                <div>
+                    <ul>
+                        <li>
+                            Facebook
+                        </li>
+                        <li>
+                            Twitter
+                        </li>
+                        <li>
+                            Instagram
+                        </li>
+                        <li>
+                            Youtube
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">
+                Copyright 2022 - Credit Easy Tutotial
+            </p>
+        </div>
+    </div>
+    
+
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px"
+                }
+
+        }
+    </script>
+    
+
+    <!-- ----------------------------JS toggle form----------------- -->
+
+    <script>
+        var loginform = document.getElementById("loginform")
+        var regform = document.getElementById("regform")
+        var indicator = document.getElementById("indicator")
+
+        function register(){
+
+            regform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+
+            regform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+}
+    </script>
+    
+
+
+</body>
+</html>
+        
+  
+
+       
+      
+    
+
+
+ 
